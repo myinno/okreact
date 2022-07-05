@@ -7,7 +7,7 @@ import axios from 'axios'
 import App from './App'
 import makeServer from './server'
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'dev') {
   axios.defaults.baseURL = 'https://api.realworld.io/api'
 }
 
